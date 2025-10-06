@@ -34,6 +34,26 @@ peek
 return the last element from mainstack 
 
 
+Approach fro Hash set 
+
+I used statick arrays of length 1000 and 1000 for both primary and secondary array
+
+used  two hash menthods
+1) module % for which index to go in primary and / for secondary
+
+Below error is beacuse of edge case when we recieve 10^6 element can you please help me resolving this issue 
+I am getting TypeError: list indices must be integers or slices, not float
+    ~~~~~~~~~~~~~~~^^^^^^
+    self.hass[val1][val2]= True
+Line 21 in add (Solution.py)
+             ^^^^^^^^
+    result = obj.add(
+Line 68 in __helper_select_method__ (Solution.py)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ctime, ans = __DriverSolution__().__helper_select_method__(method, params[index], obj)
+
+
+
 
 
 
