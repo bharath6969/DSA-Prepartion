@@ -41,10 +41,15 @@ I used statick arrays of length 1000 and 1000 for both primary and secondary arr
 used  two hash menthods
 1) module % for which index to go in primary and / for secondary
 
+for one index we have to add one more extra length to handle 10^6 element
+
 Below error is beacuse of edge case when we recieve 10^6 element can you please help me resolving this issue 
 I am getting TypeError: list indices must be integers or slices, not float
+
+fixed this issue after checking there is 10^6 element that case  was now handled and  resolved 
     ~~~~~~~~~~~~~~~^^^^^^
     self.hass[val1][val2]= True
+
 Line 21 in add (Solution.py)
              ^^^^^^^^
     result = obj.add(
